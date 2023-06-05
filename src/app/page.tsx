@@ -118,10 +118,20 @@ export default function Home() {
 
         </main>
       </div>
-      <footer className="bg-zinc-800 border-t border-zinc-700 p-6">
-        <div></div>
-        <div></div>
-        <div></div>
+      <footer className="bg-zinc-800 border-t border-zinc-700 p-6 flex items-center justify-between">
+        <div className='flex items-center gap-3'>
+          <Image src='/album.jpg' className='w-full' width={32} height={32} alt='Capa Evangelion Finaly' />
+          <div className='flex flex-col'>
+            <strong className='font-normal'>Kom Susser Tod</strong>
+            <span className='text-xs text-zinc-400'>Evangelion</span>
+          </div>
+        </div>
+        <div>
+
+        </div>
+        <div>
+
+        </div>
       </footer>
     </div>
   )
