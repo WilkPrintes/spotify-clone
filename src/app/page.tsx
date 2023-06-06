@@ -29,7 +29,7 @@ export default function Home() {
     <div className="h-screen flex flex-col">
       <div className="flex flex-1">
 
-        <aside className="w-72 bg-zinc-950 p-6">
+        <aside className=" w-20vw h-screen bg-zinc-950 p-6 fixed">
           <TopNav />
           <nav className='mt-6 pt-6 border-t border-zinc-800 flex flex-col gap-3'>
             {playlistNames.map((playlistName) => {
@@ -38,8 +38,7 @@ export default function Home() {
           </nav>
         </aside>
 
-        <main className="flex-1 p-6">
-
+        <main className="flex-1 p-6 w-80vw ml-20vw mb-15vh">
           <Chevrons />
 
           <h1 className='font-semibold text-3xl mt-10' >Good Morning</h1>
@@ -62,7 +61,7 @@ export default function Home() {
 
         </main>
       </div>
-      <footer className="bg-zinc-900 border-t border-zinc-700 px-6 py-4 flex items-center justify-between">
+      <footer className="bg-zinc-900 fixed w-screen h-15vh mt-85vh border-t border-zinc-700 px-6 py-4 flex items-center justify-between">
         <MusicPlayerLeft musicName='Kom Susser tod' artistName='Hideaki Anno' />
         <MusicPlayerControlers />
         <MusicPlayerRight />

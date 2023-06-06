@@ -8,9 +8,7 @@ export function MusicPlayerRight() {
             <Laptop2 size={20} />
             <div className='flex items-center gap-2'>
                 <Volume2 size={20} />
-                <div className='bg-white h-1 w-24 rounded-full bg-zinc-600'>
-                    <div className='bg-green-400 h-1 w-1/3 rounded-full'></div>
-                </div>
+                <input type="range" min="0" max="100" className="w-full h-1 text-green-400 cursor-pointer"/>
             </div>
             <div>
                 <Maximize2 size={20} />
