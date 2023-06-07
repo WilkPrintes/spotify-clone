@@ -34,8 +34,12 @@ export default function Home() {
         <aside className="z w-20vw h-screen bg-zinc-950 p-6 fixed invisible lg:visible">
           <TopNav />
           <nav className='mt-6 pt-6 border-t border-zinc-800 flex flex-col gap-3'>
-            {playlistNames.map((playlistName) => {
-              return <Playlist name={playlistName} />
+            {playlistNames.map((playlistName, key) => {
+              return (
+                <div key={key}>
+                  <Playlist name={playlistName} />
+                </div>
+              ) 
             })}
           </nav>
         </aside>
@@ -46,8 +50,12 @@ export default function Home() {
           <h1 className='font-semibold text-3xl mt-10'>Good Morning</h1>
 
           <div className='grid grid-cols-2 lg:grid-cols-3 gap-3 mt-4'>
-            {musicNames.map((musicName) => {
-              return <Music text={musicName} />
+            {musicNames.map((musicName, key) => {
+              return (
+                <div key={key}>
+                  <Music text={musicName} />
+                </div>
+              )
             })}
           </div>
 
