@@ -14,7 +14,7 @@ export function MusicPlayerControlers() {
             </div>
             <div className='flex items-center gap-2'>
                 <span className='text-xs text-zinc-400'>0:31</span>
-                <div className='bg-white h-1 w-96 rounded-full bg-zinc-600'>
+                <div className='h-1 w-96 rounded-full bg-zinc-600'>
                     <div className='bg-green-400 h-1 w-1/3 rounded-full'></div>
                 </div>
                 <span className='text-xs text-zinc-400'>2:35</span>
