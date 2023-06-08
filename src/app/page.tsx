@@ -71,8 +71,8 @@ export default function Home() {
 
         </main>
       </div>
-      <MusicPlayer/>
       <MobileMusicPlayer />
+      <MusicPlayer/>
     </div>
   )
 }
