@@ -3,7 +3,7 @@ import Image from "next/image";
 
 export function MobileMusicPlayer() {
     return (
-        <div className="bg-zinc-900 fixed w-screen h-15vh mt-85vh pb-5vh border-t border-zinc-700 p-2 flex items-center justify-between visible lg:invisible">
+        <div className="bg-zinc-900 fixed w-screen h-10vh mt-90vh border-t border-zinc-700 p-2 flex items-center justify-between visible lg:invisible">
             <div className="h-full flex flex-row items-center">
                 <div className="h-full w-70vw flex flex-row items-center">
                     <Image src='images/album.jpg' className='h-full w-auto p-2' width={104} height={104} alt='Capa Evangelion Finaly' />
