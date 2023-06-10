@@ -1,3 +1,5 @@
+"use client"
+
 import { Music } from './components/Music'
 import { Playlist } from './components/Playlist'
 import { TopNav } from './components/TopNav'
@@ -8,8 +10,11 @@ import { MusicPlayerControlers } from './components/MusicPlayerControlers'
 import { MusicPlayerRight } from './components/MusicPlayerRight'
 import { MobileMusicPlayer } from './components/MobileMusicPlayer'
 import { MusicPlayer } from './components/MusicPlayer'
+import useSound from 'use-sound';
 
 export default function Home() {
+
+  const [play, {stop}] = useSound('/music/evangelion.mp3', { volume: 0.5 });
 
   const musicNames = [
     'Evangelion Finaly 1',
@@ -26,7 +31,7 @@ export default function Home() {
     'Nelson Freire - Bach',
     'Blade Runner',
   ]
-  
+
   return (
     <div className="h-screen flex flex-col">
       <div className="flex flex-1">
@@ -39,7 +44,7 @@ export default function Home() {
                 <div key={key}>
                   <Playlist name={playlistName} />
                 </div>
-              ) 
+              )
             })}
           </nav>
         </aside>
@@ -72,7 +77,7 @@ export default function Home() {
         </main>
       </div>
       <MobileMusicPlayer />
-      <MusicPlayer/>
+      <MusicPlayer />
     </div>
   )
 }

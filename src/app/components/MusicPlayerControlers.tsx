@@ -1,13 +1,20 @@
+"use client"
+
 import { Shuffle, SkipBack, Play, SkipForward, Repeat } from 'lucide-react';
+import useSound from 'use-sound';
+
 
 export function MusicPlayerControlers() {
+    const [play] = useSound('/music/evangelion.mp3', { volume: 0.5 });
+
+
     return (
         <div className='flex flex-col items-center gap-2'>
             <div className='flex items-center gap-6'>
                 <Shuffle className='text-zinc-200' />
                 <SkipBack className='text-zinc-200' />
-                <button className='w-12 h-12 flex items-center justify-center pl-1 rounded-full bg-white text-black '>
-                    <Play />
+                <button onClick={() => play} className='w-12 h-12 flex items-center justify-center pl-1 rounded-full bg-white text-black '>
+                    <Play onClick={() => play} />
                 </button>
                 <SkipForward className='text-zinc-200' />
                 <Repeat className='text-zinc-200' />
