@@ -49,10 +49,10 @@ export default function Home() {
           </nav>
         </aside>
 
+        <Chevrons />
         <main className="flex-1 p-6 w-screen lg:w-80vw lg:ml-20vw mb-15vh">
-          <Chevrons />
 
-          <h1 className='font-semibold text-3xl mt-10'>Good Morning</h1>
+          <h1 className='font-semibold lg:text-2xl sm:text-xl mt-10'>Good Morning</h1>
 
           <div className='grid grid-cols-2 lg:grid-cols-3 gap-3 mt-4'>
             {musicNames.map((musicName, key) => {
@@ -64,7 +64,7 @@ export default function Home() {
             })}
           </div>
 
-          <h2 className='font-semibold text-2xl mt-10'>Made for Wilk Printes</h2>
+          <h2 className='font-semibold lg:text-2xl sm:text-xl mt-10'>Made for Wilk Printes</h2>
 
           <div className='flex flex-row flex-wrap justify-between gap-2 mt-4'>
             <PlaylistCard musicName='Evangelion Finaly' artistName='Hideaki Anno' />
